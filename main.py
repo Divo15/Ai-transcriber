@@ -51,7 +51,7 @@ OUTPUT JSON (no markdown fences, no explanation outside JSON):
       ]
     }
   ]
-}"""
+}""""
 
 
 def extract_text_from_pdf(file_bytes: bytes) -> str:
@@ -163,3 +163,4 @@ async def analyze(file: UploadFile = File(...)):
 
 # Serve static files (must be after routes)
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
